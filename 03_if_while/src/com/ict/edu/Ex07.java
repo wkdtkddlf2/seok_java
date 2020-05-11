@@ -66,9 +66,9 @@ public class Ex07 {
 		// 0 -50 까지 7의배수 출력하기
 		int k5 = 0;
 		while (k5 < 51) {
-			if (k5 % 7 ==0) {
+			if (k5 % 7 == 0) {
 				System.out.println(k5 + " ");
-			}			
+			}
 			k5++;
 		}
 		System.out.println();
@@ -85,7 +85,7 @@ public class Ex07 {
 			System.out.println("5*" + k7 + " = " + (5 * k7));
 			k7++;
 		}
-			System.out.println();
+		System.out.println();
 		// 0 0 0 0
 		// 0 0 0 0
 		// 0 0 0 0
@@ -95,29 +95,65 @@ public class Ex07 {
 			System.out.println("0 0 0 0");
 			k8++;
 		}
-			System.out.println();
-			
-			int k9 = 1;
-			while (k9<17) {
-				System.out.print("0 ");
-				if(k9 % 4 == 0) {
-					System.out.println();
-				}
-				k9++;
+		System.out.println();
+
+		int k9 = 1;
+		while (k9 < 17) {
+			System.out.print("0 ");
+			if (k9 % 4 == 0) {
+				System.out.println();
 			}
-			
-			
-			// 0-10누적합
-			// 0-10 홀수의 합계
-			// 0-10 짝수의 합계
-			// 0-10 홀수, 짝수의 합계
-			// 7!(7 * 6 * 5 * 4 * 3 * 2 * 1)
-			
-			
-			
-			
-				
-			
+			k9++;
+		}
+
+		// 0-10누적합
+		int res = 0;
+		for (int i = 0; i < 11; i++) {
+
+			res = res + i;
+
+		}
+		System.out.println("누적합 :" + res);
+
+		// 0-10 홀수의 합계
+		int odd = 0;
+		for (int i = 0; i < 11; i++) {
+			if (i % 2 == 1) {
+				odd = odd + i;
+			}
+
+		}
+		System.out.println("홀수합 :" + odd);
+
+		// 0-10 짝수의 합계
+		int even = 0;
+		for (int i = 0; i < 11; i++) {
+			if (i % 2 == 0) {
+				even = even + i;
+			}
+		}
+		System.out.println("짝수합 :" + even);
+
+		// 0-10 홀수, 짝수의 합계
+		odd = 0;
+		even = 0;
+		for (int i = 0; i < 11; i++) {
+			if (i % 2 == 1) {
+				odd = odd + i;
+			} else {
+				even = even + i;
+			}
+		}
+		System.out.println("홀수의 합 :" + odd);
+		System.out.println("짝수의 합 :" + even);
+
+		// 7!(7 * 6 * 5 * 4 * 3 * 2 * 1)
+		res = 1;
+		for (int i = 7; i > 0; i--) {
+			res = res * i;
+		}
+		System.out.println("7 !" + res);
+
 	}
 
 }

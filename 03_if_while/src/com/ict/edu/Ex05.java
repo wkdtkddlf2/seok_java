@@ -92,10 +92,10 @@ public class Ex05 {
 		// 0-10의 합계
 		int sum = 0;
 		for (int i = 0; i < 11; i++) {
-			if (i % 2 == 0) {
-				sum = sum + i;
-			}
+
+			sum = sum + i;
 		}
+
 		System.out.println("합계 :" + sum);
 
 		// 0-10홀수의 합계,
@@ -138,14 +138,3 @@ public class Ex05 {
 
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
