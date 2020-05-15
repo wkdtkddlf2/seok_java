@@ -1,36 +1,22 @@
 package com.ict.edu;
 
-public class Ex10 {
+public class Ex12 {
 	private String name;
 	private int sum;
 	private double avg;
 	private String hak;
-	private int rank = 1;
+	private int rank;
 
-	// 합계구하기
-	public int s_sum(int kor, int eng, int math) {
-		return kor + eng + math;
-
+	// 생성자
+	public Ex12() {
 	}
 
-	// 평균구하기
-	public double s_avg() {
-		return (int) (sum / 3.0 * 10) / 10.0;
-
-	}
-
-	// 학점구하기
-	public String s_hak() {
-		if (avg >= 90) {
-			hak = "A";
-		} else if (avg >= 80) {
-			hak = "B";
-		} else if (avg >= 70) {
-			hak = "C";
-		} else {
-			hak = "F";
-		}
-		return hak;
+	public Ex12(String name, int sum, double avg, String hak, int rank) {
+		this.name = name;
+		this.sum = sum;
+		this.avg = avg;
+		this.hak = hak;
+		this.rank = rank;
 	}
 
 	// getter/setter
