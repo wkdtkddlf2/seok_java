@@ -6,14 +6,18 @@ public class Ex01_sub extends Ex01_sup {
 	int age = 13;
 
 	public Ex01_sub() {
+		super(); //생략되어있는것
+		//this();,extends가 없으면 이것
 		System.out.println("자식클래스 생성자 : " + this);
 	}
 
 	public void play() {
 		System.out.println(name); // 홍반장
-
+		// 지역변수가 우선
+		
 		String name = "홍두께";
 		System.out.println(name); // 홍두께
+		
 		// 지역x, 전역x, 부모o
 		System.out.println(addr);
 		System.out.println(this.addr);
